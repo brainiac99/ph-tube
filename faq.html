@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FAQ</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+
+        position: relative;
+      }
+      .faq-modal {
+        padding: 2rem 4rem;
+      }
+
+      .faq-modal h1 {
+        text-align: center;
+        font-size: 3.2rem;
+      }
+
+      .faq-modal h2 {
+        margin-top: 2rem;
+      }
+
+      span {
+        background-color: black;
+        color: white;
+        text-transform: capitalize;
+        padding: 0.4rem;
+        border-radius: 5px;
+      }
+      .back {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        transition: all 250ms ease;
+      }
+      .back:hover {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./index.html" class="back">&leftarrow;</a>
+    <div class="faq-modal">
+      <h1>FAQ</h1>
+      <h2>Discuss the scope of `var`, `let`, and `const`</h2>
+      <div class="answer">
+        <p>
+          <span>Var:</span> Variables declared with the var keyword are either
+          globally scoped or function scoped. If a variable is declared with var
+          outside of a function, it is globally scoped and can be accessed from
+          anywhere in the code. If a variable is declared with var inside a
+          function, it is function scoped and can only be accessed within that
+          function1.
+        </p>
+        <p>
+          <span>let:</span> Variables declared with the let keyword are block
+          scoped, meaning they are only accessible within the nearest enclosing
+          block (e.g., an if statement or for loop). This means that if you
+          declare a variable with let inside a block, it cannot be accessed
+          outside of that block2.
+        </p>
+        <p>
+          <span>const:</span>
+          Like let, variables declared with the const keyword are also block
+          scoped. However, unlike let, variables declared with const cannot be
+          reassigned after they are declared2.
+        </p>
+      </div>
+      <h2>Tell us the use cases of `null` and `undefined`</h2>
+      <div class="answer">
+        <p>
+          <span>undefined:</span> A variable that has been declared but has not
+          yet been assigned a value will have the value undefined1. For example,
+          if you declare a variable with let myVar;, then myVar will be
+          undefined until you assign it a value. Additionally, if you try to
+          access an object property or array element that does not exist, the
+          value returned will be undefined.
+        </p>
+        <p>
+          <span>null:</span> In contrast to undefined, null is typically used
+          when you want to explicitly set a variable to have no value1. For
+          example, if you have a variable that is meant to hold an object
+          reference, you might initialize it to null to indicate that it does
+          not currently reference any object. This can be useful when checking
+          if a variable has been assigned a value or not.
+        </p>
+      </div>
+      <h2>What do you mean by REST API?</h2>
+      <div class="answer">
+        A REST API (Representational State Transfer Application Programming
+        Interface) is a type of API that follows the REST architectural style.
+        REST is a set of constraints that define how applications or devices can
+        connect to and communicate with each other1. REST APIs are sometimes
+        referred to as RESTful APIs1. REST APIs provide a flexible and
+        lightweight way to integrate applications and connect components in
+        microservices architectures1. They can be developed using virtually any
+        programming language and support a variety of data formats1. The only
+        requirement is that they align with the six REST design principles, also
+        known as architectural constraints: Uniform interface, Client-server
+        decoupling, Statelessness, Cacheability, Layered system architecture,
+        and Code on demand (optional)1. In summary, a REST API is an API that
+        conforms to the design principles of the REST architectural style and
+        allows for interaction with RESTful web services2. It provides a way for
+        applications to communicate with each other in a flexible and
+        lightweight manner.
+      </div>
+    </div>
+  </body>
+</html>
